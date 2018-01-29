@@ -1,0 +1,252 @@
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -ms-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+:-moz-placeholder {
+    color: #fff;
+    opacity: 0.6;
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -ms-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+::-moz-placeholder {
+    color: #fff;
+    opacity: 0.6;
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -ms-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -ms-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+:placeholder-shown {
+    color: rgba(255, 255, 255, 0.6);
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -ms-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+@font-face {
+    font-family: 'baslik';
+    src: url('yazi/baslik.eot');
+    src: url('yazi/baslik.eot?#iefix') format('embedded-opentype'),
+         url('yazi/baslik.woff') format('woff'),
+         url('yazi/baslik.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ince';
+    src: url('yazi/ince.eot');
+    src: url('yazi/ince.eot?#iefix') format('embedded-opentype'),
+         url('yazi/ince.woff') format('woff'),
+         url('yazi/ince.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+	margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	background:#414141;
+}
+
+*{
+	outline:0px;
+}
+
+#perde{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.8);
+}
+
+#perde img{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+
+.sayfa_ana_baslik{
+    font-family: 'baslik';
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px auto;
+	color: #fff146;
+}
+
+.genel_cerceve{
+	margin: 10px auto;
+    display: block;
+    width: 98%;
+    max-width: 850px;	
+	
+}
+
+.pokemon_arama{
+	width: 290px;
+	font-family: ince;
+    display: block;
+    margin: auto;
+    background: #414141;
+    border: 0px;
+    height: 34px;
+    padding-left: 10px;
+	color: #fff146;
+    box-sizing: border-box;
+    border-bottom: 1px solid #a8a8a8;
+	-webkit-transition:border-bottom 0.2s ease-in-out;
+	-moz-transition:border-bottom 0.2s ease-in-out;
+	-ms-transition:border-bottom 0.2s ease-in-out;
+	-o-transition:border-bottom 0.2s ease-in-out;
+	transition:border-bottom 0.2s ease-in-out;
+}
+
+.pokemon_arama:focus{
+border-bottom: 4px solid #fff146;
+}
+
+.poke_yukle_alan{
+	display:block;
+	width:100%;
+}
+
+
+.poke_tane{
+display: inline-block;
+    margin: 5px;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-family: baslik;
+    color: #313131;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0 rgb(238,238,238), 0 1px 0 rgb(222,222,222), 0 2px 0 rgb(205,205,205), 0 3px 0 rgb(188,188,188), 0 4px 3px rgba(107,107,107,0.1), 0 4px 1px rgba(107,107,107,0.5), 0px 0px 3px rgba(107,107,107,.2), 0 4px 7px 0px rgba(0, 0, 0, 0.35);
+	cursor:pointer;
+}
+
+.poke_tane:nth-child(even){
+	background: #fff;
+	
+}
+
+.poke_tane:nth-child(odd){
+	
+	background: #fff;
+}
+
+.poke_tane_kapali{
+	
+	display:none;
+}
+
+.cagirilan_pokemon{
+	display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    background: #dcdcdc;
+    margin-top: -225px;
+    margin-left: -150px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0 rgb(238,238,238), 0 1px 0 rgb(222,222,222), 0 2px 0 rgb(205,205,205), 0 3px 0 rgb(188,188,188), 0 4px 3px rgba(107,107,107,0.1), 0 4px 1px rgba(107,107,107,0.5), 0px 0px 3px rgba(107,107,107,.2), 0 4px 7px 0px rgba(0, 0, 0, 0.35);
+}
+
+.poke_baslik{
+width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-family: 'baslik';
+    margin: 10px auto 0px auto;
+    text-align: center;
+    text-transform: capitalize;
+    color: #414141;
+}
+
+.poke_resim{
+width:96px;
+height:96px;
+display:block;
+margin:0px auto 0px auto;
+}
+
+.poke_ozellik{
+    font-family: 'baslik';
+    display: block;
+    width: 100%;
+    height: 40px;
+    word-spacing: -4px;
+    color: #414141;
+	
+}
+.poke_ozellik_adi{
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    word-spacing: 0px;
+    display: inline-block;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.poke_ozellik_degeri{
+	display:inline-block;
+width:50%;
+height:40px;	
+line-height:40px;
+word-spacing:0px;	
+}
+
+.poke_kapat_buton{
+width: 120px;
+    display: block;
+    margin: 20px auto;
+    background: #fff;
+    color: #414141;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-family: baslik;
+    text-align: center;
+    padding: 6px;
+    box-shadow: 0px 0px 0 rgb(238,238,238), 0 1px 0 rgb(222,222,222), 0 2px 0 rgb(205,205,205), 0 3px 0 rgb(188,188,188), 0 4px 3px rgba(107,107,107,0.1), 0 4px 1px rgba(107,107,107,0.5), 0px 0px 3px rgba(107,107,107,.2), 0 4px 7px 0px rgba(0, 0, 0, 0.35);
+}
